@@ -1,4 +1,16 @@
-*Numerov (v2) Contains a set of codes for variety of 1D Schrodinger equation problems.*
+**Numerov (v2) Contains a set of codes for variety of 1D Schrodinger equation problems.**
+
+
+The Numerov package mainly consists of Python3 subroutines of Numerov method for 1D problems in time-independent quantum systems, and its application in molecular physics, including quantum simple harmonic oscillators, Particle in 1D Box problems, α particle decay, Franck-Condon vibronic transitions of diatomic molecules, quantum tunneling in various models (including quantum dots), Quantum wells, Hydrogen atom solutions, Calculation of radial functions from Pseudopotentias etc.
+
+Originally Numerov is developed for calculating 1D Franck-Condon factors for various diatomic molecules using ab initio data points and later it is exteded to other applications too.
+
+An Important Aspect of Numerov package is - it includes Spline based (linear/cubic) Numerov Algorithm to support various types of potential representations, which are otherwise difficult to represent analytical potential functions.
+
+For example, if one has only few, but highly accurate ab inito potential energy values, using Spline-Numerov one can easily calculate highly accurate wavefunction and enegies by avoiding analytically fitted potential functions (like Morse Potential). See our H2-H2+ Photoelectron Spectrum simulation which use Morse potential and Spline potentials (Refer: ).  
+
+We also added interactive-Matplotlib based graphical support to visualize data like wavefunctions.
+See Manual: Numerov_2025.pdf for more details.
 
 completed / Tested codes are:
 
