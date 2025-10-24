@@ -1,4 +1,4 @@
-Numerov (v2) Contains a set of codes for variety of 1D Schrodinger equation problems.
+*Numerov (v2) Contains a set of codes for variety of 1D Schrodinger equation problems.*
 
 completed / Tested codes are:
 
