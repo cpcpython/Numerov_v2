@@ -1,0 +1,10 @@
+Most simple Application - Particle in a Box
+Here the particle is an electron in a 8Bohr box.
+
+Folder contains: GeneralFunctions.py  GroundNumerov_v1.py  Parameters.py  RootP1Dboxv1.py
+
+USAGE:
+
+1] python3 GroundNumerov_v1.py
+
+2] python3 RootP1Dboxv1.py  (to count nodes and approx. locations of the nodes using Brent's method)
