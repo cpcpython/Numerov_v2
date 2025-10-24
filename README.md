@@ -1,3 +1,5 @@
+# Numerov Pacjage 
+
 **Numerov (v2) Contains a set of codes for variety of 1D Schrodinger equation problems.**
 
 
@@ -15,3 +17,6 @@ See Manual: Numerov_2025.pdf for more details.
 completed / Tested codes are:
 
 1. P1Dbox - for the standard 1D 'particle in a box' problems. Here the particle is an electron.
+
+
+This free software is authored by: Krishna Mohan G P [a], K R Aiswarya [b], Anusree P [b], Twinkle A R [b] and Roy K B [c]. [a] Mar Baselios Engineering Colege and Technology (autonomous), Trivandrum, Kerala, India. [b] Mar Ivanios College (autonomous), Trivandrum, Kerala India [c] SNGS Govt. College, Pattambi, Kerala, India.
