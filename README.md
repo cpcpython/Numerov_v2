@@ -1,4 +1,4 @@
-# Numerov Pacjage 
+# Numerov Package (v2)
 
 **Numerov (v2) Contains a set of codes for variety of 1D Schrodinger equation problems.**
 
