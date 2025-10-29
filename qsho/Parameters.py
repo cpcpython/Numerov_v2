@@ -9,11 +9,12 @@ yn        = 2e-15       # ynm1+1th point value "representably small number"
 xp        = 2.0         # range of oscillator as [-xp...0...xp] in atomic unit
 Egap      = 0.01        # an empirical one to fit WFN at energy levels
 node      = 0
-EsearchMax =    0.1     # for plotting, y's limit
 
-InEmin=0.0              # Starting E Minimum. it will automatically updated
-InEmax=0.01             # Starting E Maximum, it will automatically updated
-itern =10               # after this iteration program exit; if you want more levels increase it
+EsearchMax =    0.25             # for plotting, y's limit
+InEmin     =    0.0              # Starting E Minimum. it will automatically updated
+InEmax     =    0.01             # Starting E Maximum, it will automatically updated
+itern      =    20               # after this iteration program exit; if you want more levels increase it
+delE       =    0.01             # it use to move upward in E
 
 # Important:
 # PlotData- to save E,R,unNormalized Wfn upto grid shifted point, and then padded with zeros for reusing
