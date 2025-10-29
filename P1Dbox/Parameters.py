@@ -19,6 +19,7 @@ xp        = 8.0          # range of oscillator as [0...xp] in atomic unit
 Egap      = 0.01         # an empirical one to fit WFN at energy levels
 #global node
 node       =    0
+nodeMax    =    20       # Limit the node of wfn to stop the run
 EsearchMax =    10.      # for plotting, y's limit
 Amp        =    10.0
 # for Display X Y Limt
@@ -40,8 +41,8 @@ PlotData = []
 # Ground state Parameters
 ####################################################################################
 InEmin=0.0                # Starting E Minimum. it will automatically updated
-InEmax=0.01                # Starting E Maximum, it will automatically updated
-
+InEmax=0.01               # Starting E Maximum, it will automatically updated
+delE  = 0.01              # it will use to shift Emax upwards to EsearchMax
 gridShift = 50
 
 ##################################################################################
@@ -50,10 +51,10 @@ gridShift = 50
 def Potential(x):
 # here V=0 inside the box.    
     return 0.0
-
+#---------------------------------------------------------------------------------
 #Finalalizing important Parameters
-EsearchMax =     10.      # for plotting, y's limit
-itern      =     200         # after this iteration program exit; if you want more levels increase it
-node       =     0
-nodeMax    =     20         # Limit the node of wfn to stop the run
+#---------------------------------------------------------------------------------
+EsearchMax =     5.0                # for plotting, y's limit
+itern      =     100                # after this iteration program exit; if you want more levels increase it
+windowy    =    [0.,EsearchMax]     # ymin-ymax
 
