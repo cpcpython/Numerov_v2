@@ -83,7 +83,7 @@ def PlotParabolaPlus(Energies,K,XAll,PsiAll):
 # It first scans Energy from InEmin to InEmax then try to go up
 #-------------------------------------------------------------------------------------
 
-def ScanHermitefunctions(InEmin,InEmax,itern):
+def ScanHermitefunctions(InEmin,InEmax,delE,itern):
     #InEmin=0.00 ; InEmax = 0.01
     #Converged Energies, stores here
     Econverged=[]
@@ -116,31 +116,18 @@ def ScanHermitefunctions(InEmin,InEmax,itern):
 
             XAll=xx
         InEmin=InEmax
-        InEmax=InEmax+0.01
+        InEmax=InEmax+delE
     return Econverged,XAll,PsiAll
 
 
 # **Acual Calculation Section**
 # By giving a suitable numerical value of xp (-xp to xp consists the bond elongation/compression with respect to the equilibrium bond length, BL, See the Paramter section), and other important parameters, now one can start the calculations. Note that the Probaility and Wavefunction plot are 'scaled' to fit into the parabola, legibly.
 
-# In[ ]:
 
-
-K=0.33                           # force constant of H2 molecule
-EsearchMax =    0.25             # for plotting, y's limit
-InEmin     =    0.0              # Starting E Minimum. it will automatically updated
-InEmax     =    0.01             # Starting E Maximum, it will automatically updated
-itern      =    20               # after this iteration program exit; if you want more levels increase it
-
-
-Econverged,XAll,PsiAll=ScanHermitefunctions(InEmin,InEmax,itern)
+Econverged,XAll,PsiAll=ScanHermitefunctions(InEmin,InEmax,delE,itern)
 PlotParabolaPlus(Econverged,K,XAll,PsiAll)
-
-
-# In[ ]:
 
 
 # Replotting
 #figxw = pickle.load(open('FigureWfn.fig.pickle', 'rb'))  # Show the Wavefunction Figure interactively
 #figxp = pickle.load(open('FigureProb.fig.pickle', 'rb')) # Show the Probability Figure interactively
-
