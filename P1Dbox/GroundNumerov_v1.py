@@ -11,6 +11,7 @@ import pickle
 
 # importing generic parameters
 from GeneralFunctions import *
+from Parameters import delE 
 
 # calculate X range for Potential Function
 Xcomplete = []
@@ -99,12 +100,12 @@ def PlotParabolaPlus(Energies,XAll,PsiAll):
 # It first scans Energy from InEmin to InEmax then try to go up
 #-------------------------------------------------------------------------------------
 
-def ScanPsifunctions(InEmin,InEmax,itern,nodeMax,node):
+def ScanPsifunctions(InEmin,InEmax,delE,itern,nodeMax,node):
     #Converged Energies, stores here
     Econverged=[]
     PsiAll=[]
     XAll=[]
-    delE=0.05
+#   delE=0.05
     for i in range (itern): # upto range_32 is checked [ n=16 ] i upto 75 is checked.
         print("\n\n////////////////////////////////////////  I/ITERN -  ",i,"/",itern, "    /////////////////////////////////////")
         print("\n\n Searching Eigenfunction in [InEmin,InEmax] : " , InEmin,InEmax)
@@ -153,7 +154,7 @@ def ScanPsifunctions(InEmin,InEmax,itern,nodeMax,node):
 # now one can start the calculations. Note that the Probaility and Wavefunction plot are 'scaled' to fit into the parabola, legibly.
 # ***************************************************************************************************
 
-Econverged,XAll,PsiAll=ScanPsifunctions(InEmin,InEmax,itern,nodeMax,node)
+Econverged,XAll,PsiAll=ScanPsifunctions(InEmin,InEmax,delE,itern,nodeMax,node)
 print(Econverged)
 PlotParabolaPlus(Econverged,XAll,PsiAll)
 
