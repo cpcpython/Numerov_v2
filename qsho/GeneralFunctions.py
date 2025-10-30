@@ -107,19 +107,19 @@ def findHermiteFunctions(Emin, Emax):
     # egy != 1 need since sometime a single bisection loop find optimum bisection bracket
     if((Emin==InEmin) and (Emax==InEmax) and egy != 1):
         print("No solutions in this Energy Interval,[",Emin,",",Emax, "]. Exiting ...")
-        return 0,xo[0:grid-gridShift],yo[0:grid-gridShift]+[0] * gridShift
+        return 0,xo[0:grid],yo[0:grid-gridShift]+[0] * gridShift
     # -------------------------------------------------------------------------------------
     # important: If first section gives Emin~Emid~Emax we dont go furthur and should be returned Null
     tolSec=1e-12
     if(abs(Emid-Emin)<tolSec and abs(Emid-Emax)< tolSec and abs(Emin-Emax)<tolSec):
         print("No solutions in this Energy Interval where Emin~Emid~Emax: Exiting from the Second Bisection ...")
-        return 0,xo[0:grid-gridShift],yo[0:grid-gridShift]+[0] * gridShift # exiting ...
+        return 0,xo[0:grid],yo[0:grid-gridShift]+[0] * gridShift # exiting ...
 
     bs1=Emin;bs2=Emid;bs3=Emax
 
     # New Add
     if(IIBisec == 0):
-        return 0,xo[0:grid-gridShift],yo[0:grid-gridShift]+[0] * gridShift # exiting ... break;
+        return 0,xo[0:grid],yo[0:grid-gridShift]+[0] * gridShift # exiting ... break;
 
     print("*** *** *** <<< SECOND BISECTION BEGIN >>> *** *** *** ",Emin,Emid,Emax)
     secondbs=1; tolSec=0.0000001    # Second bisection for finding approximated Eigenfunction
@@ -138,7 +138,7 @@ def findHermiteFunctions(Emin, Emax):
         secondbs=secondbs+1
         if(abs(Emid-InEmax) <=2e-15):# sometime Emid tends to the limit of InEmax, that give error, so it should be avoided
             print("Emid-InEmax are very small, Exiting....")
-            return 0,xo[0:grid-gridShift],yo[0:grid-gridShift]+[0] * gridShift
+            return 0,xo[0:grid],yo[0:grid-gridShift]+[0] * gridShift
 
         if(abs(Emid-Emin)< 2e-15): # Crucial step ~ Machine Precision
             print("*** Break in Second Bisection ***")
