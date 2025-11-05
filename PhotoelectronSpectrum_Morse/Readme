@@ -1,1 +1,12 @@
 
+
+In this demo, we used Morse Potential of H2 diatomic system (ground/excited H2+) to calculate vibrational energy levels etc.
+Please visit : https://nanohub.org/tools/morsepotential for Jupyter notebook/supplementary informations (eg. to evaluate Morse Parameters etc.).
+
+Steps:
+1. run GroundNumerov_v1.py
+2. Change Parameters.py file and,
+3. run ExcitedNumerov_v1.py
+4  run FCparameter.py
+5. run PlotPES.py to get Photoelectron spectrum of H2+
+6. run Rootvib.py to get approximate locations of the nodes
