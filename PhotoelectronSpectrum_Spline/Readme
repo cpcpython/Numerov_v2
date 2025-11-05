@@ -1,1 +1,11 @@
+** Execute the files in the order:**
 
+
+ 1   python3 cs-g.py 
+ 2   python3 cs-e.py  
+ # edit Parameters_Splinev1.py for ground  state, and execute
+ 3   python3 Excited.py  
+ # edit Parameters_Splinev1.py for excited state , and execute
+ 4   python3 Ground.py   
+ 5   python3 FCparameter_Splinev1.py 
+ 6   python3 PlotPES.py # gives Photoelectron spectrum
