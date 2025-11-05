@@ -41,7 +41,7 @@ PlotData = []
 ####################################################################################
 # Ground state Parameters
 ####################################################################################
-'''
+
 # Ground state Morse Parameters
 D0   =   0.17675
 a0   =   1.0494
@@ -52,12 +52,11 @@ InEmax     =    -0.16        # Starting E Maximum, it will automatically updated
 # for Ground state :  gridshift =b when (InEmin to  a) in [[a,b],...]; a=gshift[0][0] b=gshift[0][1]     
 gridShift = 8500         # default gridShift; need to cut end point's higher values; for lower vib.quantum numbers we need to increase it
 gshift = [[InEmin,8500],[-0.1, 7000], [-0.05, 6000],[-0.01,50]]
-'''
 
 ##################################################################################
 # Excited State Parameters
 ##################################################################################
-
+'''
 # Excited state Morse parameters, un comment if needed
 D0   = 0.102928
 a0   = 0.681859
@@ -70,7 +69,7 @@ InEmax=-0.09                # Starting E Maximum, it will automatically updated
 # for Excited state
 gridShift = 8000
 gshift = [[InEmin,8000],[-0.08,6000],[-0.02,4000],[-0.01,50]]
-
+'''
 ##################################################################################
 
 # define Morse function Here Zero-shifted asymptot is used
