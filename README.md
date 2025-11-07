@@ -18,8 +18,8 @@ completed / Tested codes are:
 
 This free software (GPLv3) is authored by: 
 
-**Krishna Mohan G P [a], K R Aiswarya [b], Anusree P [b], Twinkle A R [b], Kiran Biju [a] and Roy K B [c]**
-[a] Mar Baselios Engineering Colege and Technology (autonomous), Trivandrum, Kerala, India. 
-[b] Mar Ivanios College (autonomous), Trivandrum, Kerala India [c] SNGS Govt. College, Pattambi, Kerala, India.
+**Krishna Mohan G P [a], K R Aiswarya [b], Anusree P [b], Twinkle A R [b], Kiran Biju [a] and Roy K B [c]** 
+ [a] Mar Baselios Engineering Colege and Technology (autonomous), Trivandrum, Kerala, India. 
+ [b] Mar Ivanios College (autonomous), Trivandrum, Kerala India [c] SNGS Govt. College, Pattambi, Kerala, India.
 
 
