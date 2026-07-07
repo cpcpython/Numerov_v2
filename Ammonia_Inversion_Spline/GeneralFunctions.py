@@ -181,6 +181,7 @@ def findEigenFunctions(Emin, Emax):
 # if we want to save PNG files
             plt.plot(xo[0:grid-gridShift],yo[0:grid-gridShift], linestyle='--', marker='o', color='g')
             print(Emid-Emin)
+            plt.axhline(y=0, linestyle='-', linewidth=1)
             plt.savefig('LARGE_Emidsho_'+str(Emid)+'H2.png')
             # PlotData contains the Full gridso Padding of zeros applied only in yy (due to its deviated values at ends)
             zeroP = [0] * gridShift
